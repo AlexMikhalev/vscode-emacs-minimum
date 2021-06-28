@@ -1,6 +1,6 @@
 {
     "name": "vscode-emacs-minimum",
-    "displayName": "Emacs Mininum Keymap",
+    "displayName": "Emacs Mininum Keymap - mac like",
     "description": "Emacs keybindings for only cursor moves.",
     "icon": "emacs_pacifica.png",
     "version": "1.1.1",
@@ -32,24 +32,24 @@
     "contributes": {
         "keybindings": [
             {
-                "key": "alt+a",
+                "key": "meta+a",
                 "mac": "cmd+a",
                 "command": "editor.action.selectAll",
                 "when": "editorTextFocus"
             },
             {
-                "key": "alt+b",
+                "key": "meta+b",
                 "mac": "cmd+b",
                 "command": "editor.action.toggleSidebarVisibility"
             },
             {
-                "key": "alt+f",
+                "key": "meta+f",
                 "mac": "cmd+f",
                 "command": "actions.find",
                 "when": "!findWidgetVisible"
             },
             {
-                "key": "alt+f",
+                "key": "meta+f",
                 "mac": "cmd+f",
                 "command": "editor.action.nextMatchFindAction",
                 "when": "findWidgetVisible"
@@ -64,7 +64,7 @@
                 "command": "workbench.action.quickOpen"
             },
             {
-                "key": "alt+n",
+                "key": "ctrl+alt+n",
                 "mac": "cmd+n",
                 "command": "workbench.action.files.newUntitledFile"
             },
@@ -134,16 +134,6 @@
             },
             {
                 "key": "down",
-                "command": "closeFindWidget",
-                "when": "editorFocus && findWidgetVisible"
-            },
-            {
-                "key": "ctrl+n",
-                "command": "emacs.cursorDown",
-                "when": "editorTextFocus && !suggestWidgetVisible"
-            },
-            {
-                "key": "ctrl+n",
                 "command": "closeFindWidget",
                 "when": "editorFocus && findWidgetVisible"
             },
